@@ -94,6 +94,8 @@ punkAPI
   .getBeers()
   .then(beersFromApi => console.log('Beers from the database: ', beersFromApi))
   .catch(error => console.log(error));
+
+const beers = await punkAPI.getBeers()
 ```
 
 #### 3.2 The `beers.hbs` view
